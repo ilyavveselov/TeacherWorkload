@@ -225,7 +225,6 @@ namespace ProgramWithBD
 
         private void Main_Load(object sender, EventArgs e)
         {
-            //Console.WriteLine("Сделал для теста новой ветки в git (feature)");
             try
             {
                 using (var db = new WorkloadsDataContext())
