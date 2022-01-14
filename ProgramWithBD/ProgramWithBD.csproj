@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEFFFF8B-5037-4C58-A8CB-D9878CBF62AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProgramWithBD</RootNamespace>
+    <AssemblyName>ProgramWithBD</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add\GroupAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\GroupAdd.Designer.cs">
+      <DependentUpon>GroupAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\SubjectAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\SubjectAdd.Designer.cs">
+      <DependentUpon>SubjectAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\TeacherAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\TeacherAdd.Designer.cs">
+      <DependentUpon>TeacherAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\TeacherWorkloadsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\TeacherWorkloadsAdd.Designer.cs">
+      <DependentUpon>TeacherWorkloadsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\WorkloadAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\WorkloadAdd.Designer.cs">
+      <DependentUpon>WorkloadAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change\GroupChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change\GroupChange.Designer.cs">
+      <DependentUpon>GroupChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change\SubjectsChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change\SubjectsChange.Designer.cs">
+      <DependentUpon>SubjectsChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change\TeachersChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change\TeachersChange.Designer.cs">
+      <DependentUpon>TeachersChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change\TeacherWorkloadsChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change\TeacherWorkloadsChange.Designer.cs">
+      <DependentUpon>TeacherWorkloadsChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change\WorkloadChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change\WorkloadChange.Designer.cs">
+      <DependentUpon>WorkloadChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\GetAllWorkloadByYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\GetAllWorkloadByYear.Designer.cs">
+      <DependentUpon>GetAllWorkloadByYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\GetTeacherWorkload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\GetTeacherWorkload.Designer.cs">
+      <DependentUpon>GetTeacherWorkload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Add\GroupAdd.resx">
+      <DependentUpon>GroupAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\SubjectAdd.resx">
+      <DependentUpon>SubjectAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\TeacherAdd.resx">
+      <DependentUpon>TeacherAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\TeacherWorkloadsAdd.resx">
+      <DependentUpon>TeacherWorkloadsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\WorkloadAdd.resx">
+      <DependentUpon>WorkloadAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change\GroupChange.resx">
+      <DependentUpon>GroupChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change\SubjectsChange.resx">
+      <DependentUpon>SubjectsChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change\TeachersChange.resx">
+      <DependentUpon>TeachersChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change\TeacherWorkloadsChange.resx">
+      <DependentUpon>TeacherWorkloadsChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change\WorkloadChange.resx">
+      <DependentUpon>WorkloadChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\GetAllWorkloadByYear.resx">
+      <DependentUpon>GetAllWorkloadByYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\GetTeacherWorkload.resx">
+      <DependentUpon>GetTeacherWorkload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\GetTeacherWorkloadResult.datasource" />
+    <None Include="Properties\DataSources\Groups.datasource" />
+    <None Include="Properties\DataSources\Subjects.datasource" />
+    <None Include="Properties\DataSources\Teachers.datasource" />
+    <None Include="Properties\DataSources\TeacherWorkloads.datasource" />
+    <None Include="Properties\DataSources\TeacherWorkloadsView.datasource" />
+    <None Include="Properties\DataSources\Workloads.datasource" />
+    <None Include="Properties\DataSources\WorkloadView.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

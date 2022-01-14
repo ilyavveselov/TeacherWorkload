@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.625, 8.5" name="DataClasses1">
+  <DataContextMoniker Name="/WorkloadsDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8a2d0e55-19c6-4787-b6c0-77baa0b03fa1" absoluteBounds="0.75, 1.25, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/WorkloadsDataContext/Groups" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4c3ca473-ce98-4471-bc10-dba343d73bb0" absoluteBounds="0.765, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b91f52e6-ebe2-43af-9450-df21f6fbfe90" absoluteBounds="3.5, 0.875, 2, 1.9631982421874998">
+      <DataClassMoniker Name="/WorkloadsDataContext/Workloads" />
+      <nestedChildShapes>
+        <elementListCompartment Id="210d9408-750f-4e1d-9b84-5510ad4d168a" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="59db7d46-d9e8-4cef-ac66-c905775097e9" absoluteBounds="0.75, 4.25, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/WorkloadsDataContext/Subjects" />
+      <nestedChildShapes>
+        <elementListCompartment Id="679ea47b-59ff-4cc6-a3ef-f2e7517268b1" absoluteBounds="0.765, 4.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="80844098-c3a6-4602-b0a2-b9da6980388e" absoluteBounds="3.5, 3.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/WorkloadsDataContext/Teachers" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a5d1a256-15e1-4ba8-818f-01bcf8171552" absoluteBounds="3.515, 4.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b46cd9cf-c5c4-4d15-b67f-53bb358aec4e" absoluteBounds="6.25, 1.25, 2, 1.3862939453124998">
+      <DataClassMoniker Name="/WorkloadsDataContext/TeacherWorkloads" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aeb4875f-19f9-4919-8603-29b5fa355ee8" absoluteBounds="6.265, 1.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.84699625651042); (3.5 : 1.84699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/WorkloadsDataContext/Groups/Groups_Workloads" />
+      <nodes>
+        <classShapeMoniker Id="8a2d0e55-19c6-4787-b6c0-77baa0b03fa1" />
+        <classShapeMoniker Id="b91f52e6-ebe2-43af-9450-df21f6fbfe90" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.25091745577925); (3.125 : 3.87591745577925); (3.125 : 2.37384924934896); (3.5 : 2.37384924934896)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/WorkloadsDataContext/Subjects/Subjects_Workloads" />
+      <nodes>
+        <classShapeMoniker Id="59db7d46-d9e8-4cef-ac66-c905775097e9" />
+        <classShapeMoniker Id="b91f52e6-ebe2-43af-9450-df21f6fbfe90" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.95274983723958); (7.25 : 4.95274983723958); (7.25 : 2.6362939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/WorkloadsDataContext/Teachers/Teachers_TeacherWorkloads" />
+      <nodes>
+        <classShapeMoniker Id="80844098-c3a6-4602-b0a2-b9da6980388e" />
+        <classShapeMoniker Id="b46cd9cf-c5c4-4d15-b67f-53bb358aec4e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.94314697265625); (6.25 : 1.94314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/WorkloadsDataContext/Workloads/Workloads_TeacherWorkloads" />
+      <nodes>
+        <classShapeMoniker Id="b91f52e6-ebe2-43af-9450-df21f6fbfe90" />
+        <classShapeMoniker Id="b46cd9cf-c5c4-4d15-b67f-53bb358aec4e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a068888d-23f7-47bc-866a-4849f05ab6d5" absoluteBounds="9.375, 4, 2, 3.1170068359375">
+      <DataClassMoniker Name="/WorkloadsDataContext/TeacherWorkloadsView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a8a480bb-737d-448c-aebf-11d72e0077b1" absoluteBounds="9.39, 4.46, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="47ce2904-a300-4df6-af77-6f1b68647298" absoluteBounds="9.375, 1.625, 2, 1.9631982421875">
+      <DataClassMoniker Name="/WorkloadsDataContext/WorkloadView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e4903db2-d82b-48c3-acd2-8ac1716aa9b0" absoluteBounds="9.39, 2.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
