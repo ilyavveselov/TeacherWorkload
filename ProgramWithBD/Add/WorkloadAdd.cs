@@ -51,7 +51,7 @@ namespace ProgramWithBD.Add
                     bool hl = int.TryParse(tbHLectures.Text, out int hoursLectures);
                     bool hp = int.TryParse(tbHPractice.Text, out int hoursPractice);
                     bool wYear = int.TryParse(tbYear.Text, out int workloadYear);
-                    if (subject!=null && group!=null && hl == true && hp == true && wYear == true)
+                    if (subject!=null && group!=null && hl == true && hp == true && wYear == true && workloadYear > 1970)
                     {
                         Workloads workloads = new Workloads { SubjectId = subject.Id, HoursLectures = hoursLectures, HoursPractice = hoursPractice, GroupId = group.Id, WorkloadYear = workloadYear};
                         db.Workloads.InsertOnSubmit(workloads);
