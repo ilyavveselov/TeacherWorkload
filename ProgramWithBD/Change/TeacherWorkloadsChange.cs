@@ -27,8 +27,6 @@ namespace ProgramWithBD.Change
             {
                 using (var db = new WorkloadsDataContext())
                 {
-
-                    lbTWId.Text = TeacherWorkload.Id.ToString();
                     string name = String.Empty;
                     string lastname = String.Empty;
                     string middlename = String.Empty;

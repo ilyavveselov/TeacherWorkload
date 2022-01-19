@@ -37,8 +37,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cbTeacherId = new System.Windows.Forms.ComboBox();
             this.bsTeacherWorkloads = new System.Windows.Forms.BindingSource(this.components);
-            this.label6 = new System.Windows.Forms.Label();
-            this.lbTWId = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bsWorkloadId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsTeacherId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsTeacherWorkloads)).BeginInit();
@@ -100,31 +98,11 @@
             // 
             this.bsTeacherWorkloads.DataSource = typeof(ProgramWithBD.TeacherWorkloads);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(122, 13);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "Изменяемая нагрузка";
-            // 
-            // lbTWId
-            // 
-            this.lbTWId.AutoSize = true;
-            this.lbTWId.Location = new System.Drawing.Point(161, 9);
-            this.lbTWId.Name = "lbTWId";
-            this.lbTWId.Size = new System.Drawing.Size(13, 13);
-            this.lbTWId.TabIndex = 26;
-            this.lbTWId.Text = "0";
-            // 
             // TeacherWorkloadsChange
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(248, 171);
-            this.Controls.Add(this.lbTWId);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.cbWorkloadId);
             this.Controls.Add(this.bChange);
             this.Controls.Add(this.label5);
@@ -152,7 +130,5 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cbTeacherId;
         private System.Windows.Forms.BindingSource bsTeacherWorkloads;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lbTWId;
     }
 }
